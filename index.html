@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "Jersey 15", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            /* background: linear-gradient(58deg, #ff0000, #001cff, #eeff00, #45ff00, #7600ff, #00dbff, #0ce64e, #fffa00);
+            background-size: 1600% 1600%;
+            -webkit-animation: AnimationName 22s ease infinite;
+            -moz-animation: AnimationName 22s ease infinite;
+            animation: AnimationName 22s ease infinite; */
+            min-height: 100vh;
+            margin: 0em 1em 1em 1em;
+            /* margin: 1em; */
+            /* padding: em 0 0 0; */
+            border-radius: 1em;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            position: relative;
+
+        }
+
+        .gradient-animator {
+            background: linear-gradient(58deg, #ff0000, #001cff, #eeff00, #45ff00, #7600ff, #00dbff, #0ce64e, #fffa00);
+            background-size: 1600% 1600%;
+            -webkit-animation: AnimationName 22s ease infinite;
+            -moz-animation: AnimationName 22s ease infinite;
+            animation: AnimationName 22s ease infinite;
+        }
+
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 88%}
+            50%{background-position:100% 13%}
+            100%{background-position:0% 88%}
+        }
+
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 88%}
+            50%{background-position:100% 13%}
+            100%{background-position:0% 88%}
+        }
+
+        @keyframes AnimationName {
+            0%{background-position:0% 88%}
+            50%{background-position:100% 13%}
+            100%{background-position:0% 88%}
+        }
+
+        /* .gradient-animator {
+    background: linear-gradient(228deg, #ffffff, #000000, #ffffff, #000000, #ffffff, #000000);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+} */
+
+
+        .navigation-bar {
+            color: black;
+            padding: 1em;
+            /* width: 50%; */
+            border-radius: 1em;
+            color: #fff;
+        }
+
+        .navigation {
+            flex-direction: row;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 1em;
+            padding: .5em 5em;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .navigation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            /* padding: 1em; */
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .link {
+            padding: 20PX;
+            cursor: pointer;
+            transition: 200ms ease;
+            border-radius: 1em;
+            font-size: 2em;
+        }
+
+        .link:hover {
+            background-color: #0005;
+        }
+
+        .jersey-15-regular {
+            font-family: "Jersey 15", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .right-links {
+            float: right;
+            font-size: 2em;
+            position: absolute;
+            right: 1em;
+            color: black;
+            display: flex;
+            justify-content: center;
+            gap: .5em;
+        }
+
+        .personel-link {
+            cursor: pointer;
+        }
+
+        .logo {
+            position: absolute;
+            left: 1em;
+        }
+
+        .header-main-start {
+            color: #fff;
+        }
+
+        .main-heading {
+            font-size: 30px;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .big-banner-text {
+            font-size: 70px;
+        }
+
+        .header-main-start {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-main {
+            /* position: absolute; */
+            /* top: 5em; */
+        }
+
+        .header-main-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .image {
+            width: 45%;
+            /* width: 40%; */
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .scroll-dwon {
+            font-size: 3em;
+            cursor: pointer;
+            margin-bottom: 1em;
+        }
+
+        .inner-links {
+            color: black;
+            font-size: 10em;
+            position: absolute;
+        }
+
+        .inner-links-2 {
+            color: black;
+            font-size:2em;
+            /* position: absolute; */
+            right: 20px;
+            top: 10px;
+            background-color: #fff;
+            padding: 0px 10px 0px 10px;
+            border-radius: 1em;
+            width: 5em;
+            text-align: center;
+            cursor: pointer;
+        }
+        .inner-links-2 a {
+            text-decoration: none;
+        }
+
+        .link-container {
+            color: #fff;
+        }
+
+        .link-box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: end;
+            padding: .5em;
+            gap: .5em;
+        }
+
+        .divider {
+            border-top: .5em solid white;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            /* width: 95%; */
+            margin: 5em 3em 1em 3em;
+            border-radius: 1em;
+        }
+
+        .skill-section {
+            background-color: #fff;
+            color: black;
+            padding: 5em 5em;
+        }
+
+        .skill-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skills {
+            /* color: #fff; */
+        }
+
+        .skill-heading {
+            font-size: 5em;
+        }
+
+        .single-skill {
+                /* height: 1em; */
+            width: 10em;
+            height: 15em;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 1em;
+            padding: 1em;
+            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            cursor: pointer;
+            transition: 200ms ease;
+        }
+
+        .single-skill:hover {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        .skill-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+
+        .image-skill {
+            width: 100%;
+        }
+
+        .image-skill img {
+            width: 100%;
+        }
+
+        .heading-skill {
+            font-size: 2em;
+        }
+
+        .projects-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+
+        .single-project {
+            width: 20em;
+            height: 30em;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 1em;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            transition: 200ms ease;
+            cursor: pointer;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center;
+            flex-direction: column; */
+            /* gap: 1em; */
+            position: relative;
+
+        }
+
+        .single-project:hover {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        .project-image {
+            /* width: 30%; */
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .projects-container {
+            /* padding: 2em; */
+        }
+
+        .Projects-section {
+            padding: 5em 0 5em 0;
+        }
+
+        .project-description {
+            margin-top: 1em;
+        }
+
+        .projects-link {
+            position: absolute;
+            bottom: 2em;
+        }
+
+        .projects-button {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        .app-button {
+            padding: 1em;
+            border: none;
+            border-radius: 10px;
+            color: white;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .image {
+                width: 100%;
+            }
+
+            .header-main {
+                top: 5em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <div class="navigation-container">
+            <!-- <div class="logo">
+                <div class="logo-container" style="height: 5em; width: 5em;">
+                    <img src="logo.webp" alt="" style="height: 100%; width: 100%; border-radius: 1em;">
+                </div>
+            </div> -->
+            <div class="navigation gradient-animator">
+                <!-- <div class="link">
+                    One
+                </div>
+                <div class="link">One</div>
+                <div class="link">One</div> -->
+            </div>
+
+            <div class="right-links">
+                <div class="personel-link">Resume</div>
+                <div class="personel-link"><i class="fa-brands fa-github"></i></div>
+                <div class="personel-link"><i class="fa-brands fa-instagram"></i></div>
+                <div class="personel-link"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main jersey-15-regular gradient-animator">
+        <!-- <nav class="navigation-bar">
+            <div class="navigation-container">
+                <div class="navigation">
+                    <div class="link">
+                        One
+                    </div>
+                    <div class="link">One</div>
+                    <div class="link">One</div>
+                </div>
+            </div>
+        </nav> -->
+
+        <section class="link-section">
+            <div class="link-container">
+                <div class="link-box">
+                    <div class="inner-links-2">
+                        <a href="#my-skills">Skills</a>
+                    </div>
+                    <div class="inner-links-2">Projects</div>
+                    <div class="inner-links-2">Vampy Beats</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="header-main">
+            <div class="header-main-start">
+                <div class="header-main-container">
+                    <div class="header-main-box">
+                        <!-- <div class="inner-links">Vampy Beats</div> -->
+                        <!-- <div class="inner-links-2">Vampy Beats</div> -->
+                        <div class="image">
+                            <img src="banner-image.png" alt="">
+                        </div>
+                        <div class="main-heading">
+                            I'm <span class="big-banner-text">Sahil Rajbhar</span> <br>
+                            a software engineer with a deep passion for technology and a relentless drive for innovation. 
+                            In the world of code and algorithms, I've found my calling, constantly pushing the boundaries of 
+                            what's possible in the digital realm.
+                        </div>
+                        <div class="scroll-dwon">
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div class="divider">
+            </div>
+        </section> -->
+
+        <section class="skill-section" id="my-skills">
+            <div class="skills">
+                <div class="skill-container">
+                    <!-- <span class="skill-heading">Skills</span> -->
+                    <!-- <br> -->
+                    <div class="skill-box">
+                        <div class="skill-cards">
+                            <div class="single-skill">
+                                <div class="heading-skill">Vue</div>
+                                <div class="image-skill">
+                                    <img src="/images/vue.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">React</div>
+                                <div class="image-skill">
+                                    <img src="/images/react.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Express</div>
+                                <div class="image-skill">
+                                    <img src="/images/express.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">NPM</div>
+                                <div class="image-skill">
+                                    <img src="/images/npm.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Laravel</div>
+                                <div class="image-skill">
+                                    <img src="/images/laravel.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Node</div>
+                                <div class="image-skill">
+                                    <img src="/images/node.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">My Sql</div>
+                                <div class="image-skill">
+                                    <img src="/images/sql.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Javascript</div>
+                                <div class="image-skill">
+                                    <img src="/images/javascript.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">JQuery</div>
+                                <div class="image-skill">
+                                    <img src="/images/jquery.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Bit Bucket</div>
+                                <div class="image-skill">
+                                    <img src="/images/bitbucket.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">CSS</div>
+                                <div class="image-skill">
+                                    <img src="/images/css.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Bootstrap</div>
+                                <div class="image-skill">
+                                    <img src="/images/bootstrap.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Git</div>
+                                <div class="image-skill">
+                                    <img src="/images/git.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="single-skill">
+                                <div class="heading-skill">Github</div>
+                                <div class="image-skill">
+                                    <img src="/images/github.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Projects-section">
+            <div class="projects">
+                <div class="projects-container">
+                    <div class="projects-box">
+                        <div class="projects-cards">
+                            <div class="single-project">
+                                <div class="project-image">
+                                    <img src="/images/project.jpg" alt="">
+                                </div>
+                                <div class="project-description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="projects-link">
+                                    <div class="projects-button">
+                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-project">
+                                <div class="project-image">
+                                    <img src="/images/project.jpg" alt="">
+                                </div>
+                                <div class="project-description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="projects-link">
+                                    <div class="projects-button">
+                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-project">
+                                <div class="project-image">
+                                    <img src="/images/project.jpg" alt="">
+                                </div>
+                                <div class="project-description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="projects-link">
+                                    <div class="projects-button">
+                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-project">
+                                <div class="project-image">
+                                    <img src="/images/project.jpg" alt="">
+                                </div>
+                                <div class="project-description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="projects-link">
+                                    <div class="projects-button">
+                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
