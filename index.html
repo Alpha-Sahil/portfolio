@@ -22,11 +22,6 @@
         }
 
         .main {
-            /* background: linear-gradient(58deg, #ff0000, #001cff, #eeff00, #45ff00, #7600ff, #00dbff, #0ce64e, #fffa00);
-            background-size: 1600% 1600%;
-            -webkit-animation: AnimationName 22s ease infinite;
-            -moz-animation: AnimationName 22s ease infinite;
-            animation: AnimationName 22s ease infinite; */
             min-height: 100vh;
             margin: 0em 1em 1em 1em;
             /* margin: 1em; */
@@ -63,36 +58,9 @@
             100%{background-position:0% 88%}
         }
 
-        /* .gradient-animator {
-    background: linear-gradient(228deg, #ffffff, #000000, #ffffff, #000000, #ffffff, #000000);
-    background-size: 1200% 1200%;
-
-    -webkit-animation: AnimationName 6s ease infinite;
-    -moz-animation: AnimationName 6s ease infinite;
-    animation: AnimationName 6s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:87% 0%}
-    50%{background-position:14% 100%}
-    100%{background-position:87% 0%}
-} */
-
-
         .navigation-bar {
             color: black;
             padding: 1em;
-            /* width: 50%; */
             border-radius: 1em;
             color: #fff;
         }
@@ -114,7 +82,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            /* padding: 1em; */
             position: relative;
             flex-wrap: wrap;
         }
@@ -177,11 +144,6 @@
             align-items: center;
         }
 
-        .header-main {
-            /* position: absolute; */
-            /* top: 5em; */
-        }
-
         .header-main-box {
             display: flex;
             justify-content: center;
@@ -192,7 +154,6 @@
 
         .image {
             width: 45%;
-            /* width: 40%; */
         }
 
         .image img {
@@ -214,7 +175,6 @@
         .inner-links-2 {
             color: black;
             font-size:2em;
-            /* position: absolute; */
             right: 20px;
             top: 10px;
             background-color: #fff;
@@ -244,7 +204,6 @@
         .divider {
             border-top: .5em solid white;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            /* width: 95%; */
             margin: 5em 3em 1em 3em;
             border-radius: 1em;
         }
@@ -261,19 +220,13 @@
             align-items: center;
         }
 
-        .skills {
-            /* color: #fff; */
-        }
-
         .skill-heading {
             font-size: 5em;
         }
 
         .single-skill {
-                /* height: 1em; */
             width: 10em;
             height: 15em;
-            /* background-color: pink; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -327,11 +280,6 @@
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             transition: 200ms ease;
             cursor: pointer;
-            /* display: flex; */
-            /* justify-content: center;
-            align-items: center;
-            flex-direction: column; */
-            /* gap: 1em; */
             position: relative;
 
         }
@@ -340,18 +288,10 @@
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
 
-        .project-image {
-            /* width: 30%; */
-        }
-
         .project-image img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-        }
-
-        .projects-container {
-            /* padding: 2em; */
         }
 
         .Projects-section {
@@ -378,6 +318,7 @@
             border: none;
             border-radius: 10px;
             color: white;
+            cursor: pointer;
         }
 
         @media only screen and (max-width: 1024px) {
@@ -390,23 +331,18 @@
             }
         }
 
+        @media only screen and (max-width: 750px) {
+            .navigation {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 <body>
     <nav class="navigation-bar">
         <div class="navigation-container">
-            <!-- <div class="logo">
-                <div class="logo-container" style="height: 5em; width: 5em;">
-                    <img src="logo.webp" alt="" style="height: 100%; width: 100%; border-radius: 1em;">
-                </div>
-            </div> -->
-            <div class="navigation gradient-animator">
-                <!-- <div class="link">
-                    One
-                </div>
-                <div class="link">One</div>
-                <div class="link">One</div> -->
-            </div>
+            <div class="navigation gradient-animator"></div>
 
             <div class="right-links">
                 <div class="personel-link">Resume</div>
@@ -418,18 +354,6 @@
     </nav>
 
     <main class="main jersey-15-regular gradient-animator">
-        <!-- <nav class="navigation-bar">
-            <div class="navigation-container">
-                <div class="navigation">
-                    <div class="link">
-                        One
-                    </div>
-                    <div class="link">One</div>
-                    <div class="link">One</div>
-                </div>
-            </div>
-        </nav> -->
-
         <section class="link-section">
             <div class="link-container">
                 <div class="link-box">
@@ -446,10 +370,8 @@
             <div class="header-main-start">
                 <div class="header-main-container">
                     <div class="header-main-box">
-                        <!-- <div class="inner-links">Vampy Beats</div> -->
-                        <!-- <div class="inner-links-2">Vampy Beats</div> -->
                         <div class="image">
-                            <img src="banner-image.png" alt="">
+                            <img src="/images/banner-image.png" alt="">
                         </div>
                         <div class="main-heading">
                             I'm <span class="big-banner-text">Sahil Rajbhar</span> <br>
@@ -465,16 +387,9 @@
             </div>
         </section>
 
-        <!-- <section>
-            <div class="divider">
-            </div>
-        </section> -->
-
         <section class="skill-section" id="my-skills">
             <div class="skills">
                 <div class="skill-container">
-                    <!-- <span class="skill-heading">Skills</span> -->
-                    <!-- <br> -->
                     <div class="skill-box">
                         <div class="skill-cards">
                             <div class="single-skill">
@@ -573,73 +488,133 @@
                         <div class="projects-cards">
                             <div class="single-project">
                                 <div class="project-image">
-                                    <img src="/images/project.jpg" alt="">
+                                    <img src="/images/cms.jpg" alt="">
                                 </div>
                                 <div class="project-description">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    <p>
+                                        <h2>
+                                            Organization Management Project
+                                        </h2>
+                                    </p>
+                                    <span>
+                                        Tech Stack: Laravel, Vue.js, Inertia.js, JQuery
+                                    </span>
                                 </div>
                                 <div class="projects-link">
                                     <div class="projects-button">
-                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
-                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator" onclick="window.open('https://canvasdeck.com', '_blank')">
+                                            Live Preview <i class="fa-solid fa-up-right-from-square"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="single-project">
                                 <div class="project-image">
-                                    <img src="/images/project.jpg" alt="">
+                                    <img src="/images/flight.jpg" alt="">
                                 </div>
                                 <div class="project-description">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    <p>
+                                        <h2>
+                                            Flight Searching Web App
+                                        </h2>
+                                    </p>
+                                    <span>
+                                        Tech Stack: Laravel, Vue.js, Inertia.js, JQuery
+                                    </span>
                                 </div>
                                 <div class="projects-link">
                                     <div class="projects-button">
-                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
-                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator" onclick="window.open('https://paylessfares.com/', '_blank')">
+                                            Live Preview <i class="fa-solid fa-up-right-from-square"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="single-project">
                                 <div class="project-image">
-                                    <img src="/images/project.jpg" alt="">
+                                    <img src="/images/earth.jpg" alt="">
                                 </div>
                                 <div class="project-description">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    <p>
+                                        <h2>
+                                            Map Based Web App
+                                        </h2>
+                                    </p>
+                                    <span>
+                                        Tech Stack: Express.js, Ejs, Node js, JQuery
+                                    </span>
                                 </div>
                                 <div class="projects-link">
                                     <div class="projects-button">
-                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
-                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator" onclick="window.open('https://map.curacao.com', '_blank')">
+                                            Live Preview <i class="fa-solid fa-up-right-from-square"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="single-project">
                                 <div class="project-image">
-                                    <img src="/images/project.jpg" alt="">
+                                    <img src="/images/rental.jpg" alt="">
                                 </div>
                                 <div class="project-description">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-                                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    <p>
+                                        <h2>
+                                            Rental Website
+                                        </h2>
+                                    </p>
+                                    <span>
+                                        Tech Stack: Laravel
+                                    </span>
                                 </div>
                                 <div class="projects-link">
                                     <div class="projects-button">
-                                        <button class="app-button gradient-animator">Code <i class="fa-solid fa-up-right-from-square"></i></button>
-                                        <button class="app-button gradient-animator">Live Preview <i class="fa-solid fa-up-right-from-square"></i></button>
+                                        <button class="app-button gradient-animator" onclick="window.open('https://www.harrisonluisconsulting.com/', '_blank')">
+                                            Live Preview <i class="fa-solid fa-up-right-from-square"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-project">
+                                <div class="project-image">
+                                    <img src="/images/chatting-app.jpg" alt="">
+                                </div>
+                                <div class="project-description">
+                                    <p>
+                                        <h2>
+                                            Chatting App
+                                        </h2>
+                                    </p>
+                                    <span>
+                                        Tech Stack: MERN Stack
+                                    </span>
+                                </div>
+                                <div class="projects-link">
+                                    <div class="projects-button">
+                                        <button class="app-button gradient-animator" onclick="window.open('https://github.com/Alpha-Sahil/vampire-chat', '_blank')">
+                                            Code <i class="fa-solid fa-up-right-from-square"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-project">
+                                <div class="project-image">
+                                    <img src="/images/Clean.jpg" alt="">
+                                </div>
+                                <div class="project-description">
+                                    <p>
+                                        <h2>
+                                            E-Commerce Application
+                                        </h2>
+                                    </p>
+                                    <span>
+                                        Tech Stack: MERN Stack
+                                    </span>
+                                </div>
+                                <div class="projects-link">
+                                    <div class="projects-button">
+                                        <button class="app-button gradient-animator" onclick="window.open('https://github.com/Alpha-Sahil/e-commerce-ste', '_blank')">
+                                            Code <i class="fa-solid fa-up-right-from-square"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
